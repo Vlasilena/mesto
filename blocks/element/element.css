@@ -1,0 +1,14 @@
+@import url('./__rectangle/element__rectangle.css');
+@import url('./__img/element__img.css');
+@import url('./__row/element__row.css');
+@import url('./__title/element__title.css');
+
+
+.element {
+  margin: 0;
+  max-width: 282px;
+  height: 361px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}

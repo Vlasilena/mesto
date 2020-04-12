@@ -1,0 +1,7 @@
+.element__rectangle {
+  background-color: #fff;
+  margin: 0;
+  max-width: 282px;
+  height: 362px;
+  border-radius: 10px;
+}

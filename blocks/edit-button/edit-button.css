@@ -9,3 +9,8 @@
   border: none;
   padding: 0;
 }
+
+.edit-button:hover {
+  opacity: .6;
+  transition: ease .3s;
+}

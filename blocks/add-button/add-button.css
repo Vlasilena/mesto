@@ -10,3 +10,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.add-button:hover {
+  opacity: .6;
+  transition: ease .3s;
+}

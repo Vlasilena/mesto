@@ -1,0 +1,7 @@
+.element__row {
+  display: flex;
+  margin: 25px auto 0;
+  width: calc(100% - 42px);
+  align-items: baseline;
+  justify-content: space-between;
+}
