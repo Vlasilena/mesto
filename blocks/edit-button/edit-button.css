@@ -1,0 +1,11 @@
+.edit-button {
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  background-image: url(../../image/buttons/Edit-Button.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+}
