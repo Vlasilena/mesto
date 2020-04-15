@@ -1,6 +1,11 @@
 .profile__info-header {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+          justify-content: space-between;
 }

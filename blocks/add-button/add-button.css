@@ -7,11 +7,20 @@
   background-color: #000;
   background-image: url(../../image/buttons/Add-Button.png);
   background-size: contain;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
+  align-content: flex-end;
 }
 
 .add-button:hover {
   opacity: .6;
   transition: ease .3s;
+}
+
+@media screen and (max-width : 900px) {
+  .add-button {
+    margin: 36px auto 0;
+    width: 282px;
+    background-image: url(../../image/buttons/Add-Button-xl.png);
+  }
 }
