@@ -5,7 +5,4 @@
   border: none;
 }
 
-.popup__button:hover {
-  opacity: .6;
-  transition: ease .3s;
-}
+

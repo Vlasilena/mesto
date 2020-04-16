@@ -8,8 +8,8 @@
 </head>
 <body>
   <div class="root">
-    <section class="popup popup__overlay">
-      <div class="popup__container popup__rectangle">
+    <section class="popup">
+      <div class="popup__container">
         <button class="popup__button popup__button_close" title="Закрыть"></button>
         <form class="popup__edit">
           <div class="popup__main-container">
@@ -18,8 +18,9 @@
               <input type="text" class="popup__item popup__item_name">
               <input type="text" class="popup__item popup__item_about">
             </fieldset>
-            <button class="popup__button popup__button_save" title="Сохранить"></button>
-
+            <fieldset class="popup__handlers">
+              <button class="popup__button popup__button_save" title="Сохранить"></button>
+            </fieldset>
           </div>
         </form>
       </div>
