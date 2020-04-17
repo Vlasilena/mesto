@@ -10,5 +10,7 @@
 
 .popup__button_save:hover {
   opacity: .8;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
   transition: ease .3s;
 }

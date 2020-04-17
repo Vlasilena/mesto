@@ -9,11 +9,14 @@
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  align-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
 
 .add-button:hover {
   opacity: .6;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
   transition: ease .3s;
 }
 

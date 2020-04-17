@@ -1,23 +1,96 @@
 .elements {
   margin: 50px auto 0;
   max-width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 21px 1fr 21px 1fr;
   grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 18px 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 18px 21px;
+}.elements > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}.elements > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}.elements > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}.elements > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}.elements > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}.elements > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
 }
 
 @media screen and (max-width : 900px) {
   .elements {
+    -ms-grid-columns: 1fr 21px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 18px 1fr 18px 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .elements > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .elements > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .elements > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
   }
 }
 
 @media screen and (max-width : 600px) {
   .elements {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
+  }
+  .elements > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(5) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .elements > *:nth-child(6) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
   }
 }

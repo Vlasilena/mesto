@@ -1,26 +1,26 @@
-let root = document.querySelector('.root');
-let content = root.querySelector('.content');
-let profile = content.querySelector('.profile');
-let editButton = profile.querySelector('.edit-button');
-let editForm = root.querySelector('.popup__edit');
-let popup = root.querySelector('.popup');
-let titleProfile = profile.querySelector('.profile__title');
-let subtitleProfile = profile.querySelector('.profile__subtitle');
-let nameInput = editForm.querySelector('.popup__item_name');
-let jobInput = editForm.querySelector('.popup__item_about');
-
+const root = document.querySelector('.root');
+const content = root.querySelector('.content');
+const profile = content.querySelector('.profile');
+const editButton = profile.querySelector('.edit-button');
+const editForm = root.querySelector('.popup__edit');
+const popup = root.querySelector('.popup');
 
 function formOpen() {
   popup.classList.add('popup_opened');
 
+  let titleProfile = profile.querySelector('.profile__title');
+  let subtitleProfile = profile.querySelector('.profile__subtitle');
+
+  let nameInput = editForm.querySelector('.popup__item_name');
+  let jobInput = editForm.querySelector('.popup__item_about');
+
   nameInput.value = titleProfile.textContent;
   jobInput.value = subtitleProfile.textContent;
-
 }
 
 editButton.addEventListener('click', formOpen);
 
-let closeButton = root.querySelector('.popup__button_close');
+const closeButton = root.querySelector('.popup__button_close');
 
 function formClose() {
   popup.classList.remove('popup_opened');
@@ -30,6 +30,12 @@ closeButton.addEventListener('click', formClose);
 
 function formSubmitHandler (evt) {
   evt.preventDefault();
+
+  let nameInput = editForm.querySelector('.popup__item_name');
+  let jobInput = editForm.querySelector('.popup__item_about');
+
+  let titleProfile = profile.querySelector('.profile__title');
+  let subtitleProfile = profile.querySelector('.profile__subtitle');
 
   titleProfile.textContent = nameInput.value;
   subtitleProfile.textContent = jobInput.value;
