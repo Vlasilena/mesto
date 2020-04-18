@@ -9,8 +9,6 @@
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
 }
 
 .add-button:hover {
