@@ -6,15 +6,15 @@
 
 .profile {
   margin: 0 auto;
-  width: 100%;
+  max-width: 882px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 120px 30px 552px 30px 150px;
   grid-template-columns: 120px 552px 150px;
   grid-gap: 30px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width : 900px) {
@@ -24,13 +24,13 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }

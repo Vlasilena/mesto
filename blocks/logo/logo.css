@@ -1,9 +1,9 @@
 .logo {
   max-width: 141.01px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 @media screen and (max-width : 900px) {

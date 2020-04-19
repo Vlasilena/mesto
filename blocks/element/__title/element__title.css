@@ -11,7 +11,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width : 600px) {
