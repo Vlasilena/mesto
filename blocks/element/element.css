@@ -18,4 +18,5 @@
   flex-direction: column;
   -ms-flex-item-align: center;
   align-self: center;
+  position: relative;
 }
