@@ -19,3 +19,11 @@
 .popup__item:last-of-type {
   margin-bottom: 0;
 }
+
+.popup__item::placeholder {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4
+}
