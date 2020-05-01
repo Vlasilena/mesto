@@ -7,6 +7,7 @@ const addPopup = document.querySelector('.add-popup');
 const elementsContainer = document.querySelector('.elements');
 const closedButton = document.querySelector('.popup__button_closed');
 const savedButton = document.querySelector('.popup__button_saved');
+const deleteButton = document.querySelector('.delete-button');
 const initialCards = [
   {
       name: 'Альбукерке, США',
@@ -76,6 +77,7 @@ function addImg(titleValue, imgValue) {
   const imageElement = elementTemplate.cloneNode(true);
   imageElement.querySelector('.element__img').src = imgValue;
   imageElement.querySelector('.element__title').textContent = titleValue;
+  imageElement.querySelector('.delete-button').addEventListener('click', delElement);
   elementsContainer.prepend(imageElement);
 }
 
@@ -93,6 +95,12 @@ savedButton.addEventListener('click', function (evt) {
 addButton.addEventListener('click', formAdd);
 closedButton.addEventListener('click', formAdd);
 
+// добавление картинок при загрузке страницы
 initialCards.forEach(function (element) {
   elementsContainer.prepend(addImg(element.name, element.link));
 });
+
+// удаление карточек
+function delElement(elements){
+  elements.target.closest('.element').remove();
+};
