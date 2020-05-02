@@ -14,4 +14,12 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+  opacity: .6;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.like-button:active, .like-button:focus {
+  outline: none;
 }

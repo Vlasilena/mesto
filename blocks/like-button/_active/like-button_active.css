@@ -1,0 +1,6 @@
+.like-button_active {
+  background-image: url('../../../image/buttons/like-dark.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}

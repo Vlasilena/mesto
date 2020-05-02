@@ -78,6 +78,9 @@ function addImg(titleValue, imgValue) {
   imageElement.querySelector('.element__img').src = imgValue;
   imageElement.querySelector('.element__title').textContent = titleValue;
   imageElement.querySelector('.delete-button').addEventListener('click', delElement);
+  imageElement.querySelector('.like-button').addEventListener('click', function (evt) {
+    evt.target.classList.toggle('like-button_active');
+  })
   elementsContainer.prepend(imageElement);
 }
 
