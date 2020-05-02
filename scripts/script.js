@@ -97,7 +97,7 @@ closedButton.addEventListener('click', formAdd);
 
 // добавление картинок при загрузке страницы
 initialCards.forEach(function (element) {
-  elementsContainer.prepend(addImg(element.name, element.link));
+addImg(element.name, element.link);
 });
 
 // удаление карточек
