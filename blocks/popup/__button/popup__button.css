@@ -4,3 +4,7 @@
 .popup__button {
   border: none;
 }
+
+.popup__button:active, .popup__button:focus {
+  outline: none;
+}

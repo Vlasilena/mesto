@@ -8,6 +8,10 @@ const elementsContainer = document.querySelector('.elements');
 const closedButton = document.querySelector('.popup__button_closed');
 const savedButton = document.querySelector('.popup__button_saved');
 const deleteButton = document.querySelector('.delete-button');
+const imgPopup = document.querySelector('.popup__img');
+const clsButton = document.querySelector('.popup__button_cls');
+let bigImg = document.querySelector('.popup__imgUp');
+let titleImg = document.querySelector('.popup__title');
 const initialCards = [
   {
       name: 'Альбукерке, США',
@@ -77,9 +81,14 @@ function addImg(titleValue, imgValue) {
   const imageElement = elementTemplate.cloneNode(true);
   imageElement.querySelector('.element__img').src = imgValue;
   imageElement.querySelector('.element__title').textContent = titleValue;
-  imageElement.querySelector('.delete-button').addEventListener('click', delElement);
-  imageElement.querySelector('.like-button').addEventListener('click', function (evt) {
+  imageElement.querySelector('.delete-button').addEventListener('click', delElement); // нажатие на кнопку удаления картинки
+  imageElement.querySelector('.like-button').addEventListener('click', (evt) => { // нажатие на кнопку лайка
     evt.target.classList.toggle('like-button_active');
+  })
+  imageElement.querySelector('.element__img').addEventListener('click', (evt) => { // нажатие на картинку для ее увеличения
+   imgUp();
+   bigImg.src = evt.target.src;
+   titleImg.textContent = titleValue;
   })
   elementsContainer.prepend(imageElement);
 }
@@ -107,3 +116,10 @@ addImg(element.name, element.link);
 function delElement(elements){
   elements.target.closest('.element').remove();
 };
+
+// открытие попапа увеличенной картинки
+function imgUp() {
+    imgPopup.classList.toggle('popup_opened');
+  }
+
+  clsButton.addEventListener('click',imgUp);

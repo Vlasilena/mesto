@@ -5,6 +5,10 @@
 @import url('./__item/popup__item.css');
 @import url('./__button/popup__button.css');
 @import url('./__handlers/popup__handlers.css');
+@import url('./__img/popup__img.css');
+@import url('./__img-container/popup__img-container.css');
+@import url('./__imgUp/popup__imgUp.css');
+@import url('./__title/popup__title.css');
 
 .popup {
   display: none;
