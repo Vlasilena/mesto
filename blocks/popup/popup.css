@@ -5,12 +5,13 @@
 @import url('./__item/popup__item.css');
 @import url('./__button/popup__button.css');
 @import url('./__handlers/popup__handlers.css');
-@import url('./__img/popup__img.css');
 @import url('./__img-container/popup__img-container.css');
 @import url('./__imgUp/popup__imgUp.css');
 @import url('./__title/popup__title.css');
 
 .popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position:fixed;
   width: 100%;
@@ -28,7 +29,10 @@
   z-index:100;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: visability, opacity 0.5s linear;
+  -o-transition: visability, opacity 0.5s linear;
   transition: visability, opacity 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
-
 }

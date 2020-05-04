@@ -2,8 +2,8 @@
   width: 41px;
   height: 41px;
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: -33px;
+  right: -33px;
   padding: 5px;
   background-color: transparent;
   background-image: url(../../../../image/buttons/Close-Icon.png);
@@ -21,8 +21,8 @@
 
 @media screen and (max-width : 600px) {
   .popup__button_close {
-    top: -2px;
-    right: -2px;
+    top: -5px;
+    right: -5px;
     background-image: url(../../../../image/buttons/Close-Icon-dark.png);
   }
 }
