@@ -24,6 +24,7 @@
     top: -5px;
     right: -5px;
     background-image: url(../../../../image/buttons/Close-Icon-dark.png);
+    z-index: 10;
   }
 }
 
