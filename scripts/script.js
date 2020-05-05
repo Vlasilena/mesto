@@ -7,11 +7,10 @@ const addPopup = document.querySelector('.add-popup');
 const elementsContainer = document.querySelector('.elements');
 const closedButton = document.querySelector('.popup__button_closed');
 const savedButton = document.querySelector('.popup__button_saved');
-const deleteButton = document.querySelector('.delete-button');
 const imgPopup = document.querySelector('.popup__img');
 const clsButton = document.querySelector('.popup__button_cls');
-let bigImg = document.querySelector('.popup__imgUp');
-let titleImg = document.querySelector('.popup__title');
+const bigImg = document.querySelector('.popup__imgUp');
+const titleImg = document.querySelector('.popup__title');
 const initialCards = [
   {
       name: 'Альбукерке, США',
@@ -43,8 +42,8 @@ const initialCards = [
 function formCloseOpen () {
   const titleProfile = document.querySelector('.profile__title');
   const subtitleProfile = document.querySelector('.profile__subtitle');
-  let nameInput = document.querySelector('.popup__item_name');
-  let jobInput = document.querySelector('.popup__item_about');
+  const nameInput = document.querySelector('.popup__item_name');
+  const jobInput = document.querySelector('.popup__item_about');
   nameInput.value = titleProfile.textContent;
   jobInput.value = subtitleProfile.textContent;
   popup.classList.toggle('popup_opened');
@@ -58,8 +57,8 @@ function formSubmitHandler (evt) {
   evt.preventDefault();
   const nameInput = document.querySelector('.popup__item_name');
   const jobInput = document.querySelector('.popup__item_about');
-  let titleProfile = document.querySelector('.profile__title');
-  let subtitleProfile = document.querySelector('.profile__subtitle');
+  const titleProfile = document.querySelector('.profile__title');
+  const subtitleProfile = document.querySelector('.profile__subtitle');
   titleProfile.textContent = nameInput.value;
   subtitleProfile.textContent = jobInput.value;
   formCloseOpen();
@@ -69,8 +68,8 @@ editForm.addEventListener('submit', formSubmitHandler);
 
 // открытие/закрытие попапа для добавления картинки
 function formAdd () {
-  let namePlace = document.querySelector('.popup__item_name-place');
-  let linkPlace = document.querySelector('.popup__item_link-place');
+  const namePlace = document.querySelector('.popup__item_name-place');
+  const linkPlace = document.querySelector('.popup__item_link-place');
   addPopup.classList.toggle('popup_opened');
 }
 
@@ -81,7 +80,7 @@ function addImg(titleValue, imgValue) {
   const imageElement = elementTemplate.cloneNode(true);
   imageElement.querySelector('.element__img').src = imgValue;
   imageElement.querySelector('.element__title').textContent = titleValue;
-  imageElement.querySelector('.delete-button').addEventListener('click', delElement); // нажатие на кнопку удаления картинки
+  imageElement.querySelector('.deconste-button').addEventListener('click', delElement); // нажатие на кнопку удаления картинки
   imageElement.querySelector('.like-button').addEventListener('click', (evt) => { // нажатие на кнопку лайка
     evt.target.classList.toggle('like-button_active');
   })
